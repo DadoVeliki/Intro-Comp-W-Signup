@@ -1,0 +1,141 @@
+/*DESKTOP DESIGN
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    background: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%) ;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 82.5rem;
+}
+.levo{
+    color:white;
+    padding-right: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.levo h1{
+    font-size: 40pt;
+    margin-bottom: 5%;
+    line-height: 1;
+}
+.desno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.gornje{
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    height: 60px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.donje{
+    padding:7%;
+    background-color: white;
+    border-radius: 10px;
+}
+input{
+    height: 60px;
+    border-color:hsl(246, 25%, 77%);
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 5%;
+    font-weight: 700;
+    font-size: 12pt;
+    color:hsl(249, 10%, 26%) ;
+    
+}
+input,button{
+    margin-top: 3%;
+}
+button{
+    height: 60px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: 600;
+    font-size: 15pt;
+    margin-bottom: 2%;
+}
+.jen{
+    font-weight: 700;
+}
+.dva{
+    font-weight: 400;
+}
+.desno p{
+    color:hsl(246, 25%, 77%);
+    font-size: 10pt;
+    text-align: center;
+}
+.desno p span{
+    color:hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+h4{
+    display: none;
+    margin-left:60%;
+    color:hsl(0, 100%, 74%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+/*ACTIVE STATES
+*/
+button:hover{
+    cursor: pointer;
+    background-color: hsl(154, 51%, 67%);
+}
+/*MOBILE DESIGN
+*/
+@media screen and (max-width:375px){
+    .container{
+        width:90%;
+        flex-direction: column;
+    }
+    .levo,.desno{
+        width: 100%;
+    }
+    .levo h1{
+        font-size: 20pt;
+        text-align: center;
+    }
+    .levo p{
+        text-align: center;
+    }
+    .levo{
+        padding:0;
+    }
+    h4{
+        margin-left: 30%;
+    }
+}
